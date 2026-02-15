@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="ko" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-10_process_and_policies/10_01_ticket_lifecycle_and_sla" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">티켓 라이프사이클 &amp; SLA | 2000 Archives CS Playbook</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"><meta data-rh="true" property="og:locale" content="ko"><meta data-rh="true" name="docusaurus_locale" content="ko"><meta data-rh="true" name="docsearch:language" content="ko"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="티켓 라이프사이클 &amp; SLA | 2000 Archives CS Playbook"><meta data-rh="true" name="description" content="티켓 라이프사이클"><meta data-rh="true" property="og:description" content="티켓 라이프사이클"><link data-rh="true" rel="icon" href="/cs-playbook/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla" hreflang="ko"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"프로세스 & 정책","item":"https://seankim-business.github.io/cs-playbook/category/프로세스--정책"},{"@type":"ListItem","position":2,"name":"티켓 라이프사이클 & SLA","item":"https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"}]}</script><link rel="stylesheet" href="/cs-playbook/assets/css/styles.e62fb1de.css">
+<script src="/cs-playbook/assets/js/runtime~main.9b677fbc.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/main.9da9e854.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="본문으로 건너뛰기"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">본문으로 건너뛰기</a></div><nav aria-label="메인" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="사이드바 펼치거나 접기" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cs-playbook/"><b class="navbar__title text--truncate">2000 Archives CS Playbook</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cs-playbook/">Playbook</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="맨 위로 스크롤하기" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="문서 사이드바" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cs-playbook/"><span title="Home" class="linkLabel_WmDU">Home</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/브랜드-원칙"><span title="브랜드 원칙" class="categoryLinkLabel_W154">브랜드 원칙</span></a><button aria-label="사이드바 분류 &#x27;브랜드 원칙&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/cs-playbook/category/프로세스--정책"><span title="프로세스 &amp; 정책" class="categoryLinkLabel_W154">프로세스 &amp; 정책</span></a><button aria-label="사이드바 분류 &#x27;프로세스 &amp; 정책&#x27; 접기" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"><span title="티켓 라이프사이클 &amp; SLA" class="linkLabel_WmDU">티켓 라이프사이클 &amp; SLA</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_02_escalation_rules"><span title="에스컬레이션 규칙" class="linkLabel_WmDU">에스컬레이션 규칙</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy"><span title="주문 &amp; 결제 정책" class="linkLabel_WmDU">주문 &amp; 결제 정책</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_04_shipping_and_preorder_policy"><span title="배송 &amp; 예약배송 정책" class="linkLabel_WmDU">배송 &amp; 예약배송 정책</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_05_exchange_return_refund_policy"><span title="교환/반품/환불 정책" class="linkLabel_WmDU">교환/반품/환불 정책</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_06_coupon_point_promo_policy"><span title="쿠폰/포인트/프로모션 정책" class="linkLabel_WmDU">쿠폰/포인트/프로모션 정책</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/시나리오-플레이북"><span title="시나리오 플레이북" class="categoryLinkLabel_W154">시나리오 플레이북</span></a><button aria-label="사이드바 분류 &#x27;시나리오 플레이북&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/known-issues"><span title="Known Issues" class="categoryLinkLabel_W154">Known Issues</span></a><button aria-label="사이드바 분류 &#x27;Known Issues&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/스타일링--업셀"><span title="스타일링 &amp; 업셀" class="categoryLinkLabel_W154">스타일링 &amp; 업셀</span></a><button aria-label="사이드바 분류 &#x27;스타일링 &amp; 업셀&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/상품-정보"><span title="상품 정보" class="categoryLinkLabel_W154">상품 정보</span></a><button aria-label="사이드바 분류 &#x27;상품 정보&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/소재--케어"><span title="소재 &amp; 케어" class="categoryLinkLabel_W154">소재 &amp; 케어</span></a><button aria-label="사이드바 분류 &#x27;소재 &amp; 케어&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/퍼블릭-콘텐츠-링크"><span title="퍼블릭 콘텐츠 링크" class="categoryLinkLabel_W154">퍼블릭 콘텐츠 링크</span></a><button aria-label="사이  드바 분류 &#x27;퍼블릭 콘텐츠 링크&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/채널-가이드"><span title="채널 가이드" class="categoryLinkLabel_W154">채널 가이드</span></a><button aria-label="사이드바 분류 &#x27;채널 가이드&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/도구--ai"><span title="도구 &amp; AI" class="categoryLinkLabel_W154">도구 &amp; AI</span></a><button aria-label="사이드바 분류 &#x27;도구 &amp; AI&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/교육--qa"><span title="교육 &amp; QA" class="categoryLinkLabel_W154">교육 &amp; QA</span></a><button aria-label="사이드바 분류 &#x27;교육 &amp; QA&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="탐색 경로"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="홈" class="breadcrumbs__link" href="/cs-playbook/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/cs-playbook/category/프로세스--정책"><span>프로세스 &amp; 정책</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">티켓 라이프사이클 &amp; SLA</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">이 페이지에서</button></div><div class="theme-doc-markdown markdown"><header><h1>티켓 라이프사이클 &amp; SLA</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="티켓-라이프사이클">티켓 라이프사이클<a href="#티켓-라이프사이클" class="hash-link" aria-label="티켓 라이프사이클에 대한 직접 링크" title="티켓 라이프사이클에 대한 직접 링크" translate="no">​</a></h2>
+<p>모든 고객 문의는 <strong>티켓(Ticket)</strong> 형태로 관리되며, <strong>Notion SOP PROC-B-004</strong> 4단계 프로세스를 기반으로 다음 5단계의 생애주기를 거칩니다.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="notion-sop-proc-b-004-4-step-매핑">Notion SOP PROC-B-004 4-Step 매핑<a href="#notion-sop-proc-b-004-4-step-매핑" class="hash-link" aria-label="Notion SOP PROC-B-004 4-Step 매핑에 대한 직접 링크" title="Notion SOP PROC-B-004 4-Step 매핑에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>SOP Step</th><th>티켓 단계</th><th>설명</th></tr></thead><tbody><tr><td>Step 1: 문의접수확인</td><td>신규 → 접수</td><td>채널톡/무신  사/29CM에서 문의 접수, 분류</td></tr><tr><td>Step 2: 분류/응대</td><td>처리중</td><td>유형별 분류, 1차 응대, 시스템 조회</td></tr><tr><td>Step 3: 교환/환불 처리</td><td>처리중 → 해결</td><td>Cafe24 어드민 + 패스트박스 3PL 처리</td></tr><tr><td>Step 4: 클레임 에스컬레이션</td><td>에스컬레이션</td><td>이커머스 매니저 → Slack #2000archives-management</td></tr></tbody></table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-신규-new----sop-step-1">1. 신규 (New) -- SOP Step 1<a href="#1-신규-new----sop-step-1" class="hash-link" aria-label="1. 신규 (New) -- SOP Step 1에 대한 직접 링크" title="1. 신규 (New) -- SOP Step 1에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>정의</strong>: 고객이 문의를 접수한 직후의 상태</li>
+<li class=""><strong>채널</strong>: 채널톡(자사몰), 무신사 파트너센터, 29CM 판매자센터, 카카오톡</li>
+<li class=""><strong>SLA 시작</strong>: 이 시점부터 첫 응답 SLA 카운트 시작</li>
+<li class=""><strong>자동 작업</strong>:
+<ul>
+<li class="">채널톡 AI 자동 분류 (주문/배송/교환/반품/사이즈/소재/스타일링 등)</li>
+<li class="">주문번호 기반 Cafe24 어드민 자동 조회</li>
+<li class="">셀릭 ERP 상품코드 매칭 확인 (전환 중 오류 가능)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-접수-assigned----sop-step-1-2">2. 접수 (Assigned) -- SOP Step 1-2<a href="#2-접수-assigned----sop-step-1-2" class="hash-link" aria-label="2. 접수 (Assigned) -- SOP Step 1-2에 대한 직접 링크" title="2. 접수 (Assigned) -- SOP Step 1-2에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>정의</strong>: 문의가 확인되어 처리가 시작된 상태</li>
+<li class=""><strong>담당</strong>: AI 에이전트 (채널톡 봇) 또는 이커머스 매니저</li>
+<li class=""><strong>작업 내용</strong>:
+<ul>
+<li class="">티켓 내용 정확히 파악</li>
+<li class="">Cafe24 어드민 / 무신사 파트너센터 / 29CM 판매자센터에서 주문 이력 조회</li>
+<li class="">셀릭 ERP에서 재고/출고 상태 확인</li>
+<li class="">패스트박스 3PL 시스템에서 물류 상태 확인</li>
+<li class="">KYNDOF IMS Master (Google Sheets)에서 추가 정보 조회</li>
+<li class="">25_known_issues_current/ 에서 현재 알려진 이슈 매칭</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-처리중-in-progress----sop-step-2-3">3. 처리중 (In Progress) -- SOP Step 2-3<a href="#3-처리중-in-progress----sop-step-2-3" class="hash-link" aria-label="3. 처리중 (In Progress) -- SOP Step 2-3에 대한 직접 링크" title="3. 처리중 (In Progress) -- SOP Step 2-3에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>정의</strong>: 문제 해결을 위해 실제 작업을 진행하는 상태</li>
+<li class=""><strong>작업 예시</strong>:
+<ul>
+<li class="">고객에게 첫 응답 전송</li>
+<li class="">Cafe24 어드민에서 교환/반품/환불 접수</li>
+<li class="">패스트박스 3PL에 회수/발송 요청</li>
+<li class="">무신사/29CM에서 반품 승인 처리</li>
+<li class="">셀릭 ERP에서 재고 확인 (크로스체크 필수)</li>
+</ul>
+</li>
+<li class=""><strong>중간 보고</strong>: 4시간마다 고객에게 진행 상황 업데이트 (장기 처리 건)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="4-해결-resolved----sop-step-3-완료">4. 해결 (Resolved) -- SOP Step 3 완료<a href="#4-해결-resolved----sop-step-3-완료" class="hash-link" aria-label="4. 해결 (Resolved) -- SOP Step 3 완료에 대한 직접 링크" title="4. 해결 (Resolved) -- SOP Step 3 완료에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>정의</strong>: 문제가 해결되어 고객에게 최종 답변을 전달한 상태</li>
+<li class=""><strong>조건</strong>:
+<ul>
+<li class="">고객 의 질문에 완전한 답변 제공</li>
+<li class="">요청 사항 처리 완료 (환불, 교환, 재발송 등)</li>
+<li class="">Cafe24 어드민에서 처리 상태 갱신 완료</li>
+<li class="">패스트박스에서 출고/회수 처리 완료</li>
+</ul>
+</li>
+<li class=""><strong>자동 전환</strong>: 해결 후 24시간 동안 고객 응답 없으면 자동 종료</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="5-종료-closed">5. 종료 (Closed)<a href="#5-종료-closed" class="hash-link" aria-label="5. 종료 (Closed)에 대한 직접 링크" title="5. 종료 (Closed)에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>정의</strong>: 티켓이 완전히 마무리된 상태</li>
+<li class=""><strong>조건</strong>:
+<ul>
+<li class="">해결 상태에서 24시간 경과</li>
+<li class="">고객이 &quot;감사합니다&quot;, &quot;해결되었습니다&quot; 등 확인 응답</li>
+<li class="">이커머스 매니저가 수동 종료</li>
+</ul>
+</li>
+<li class=""><strong>데이터 보관</strong>: 종료된 티켓은 1년간 보관 후 아카이빙</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sla-service-level-agreement">SLA (Service Level Agreement)<a href="#sla-service-level-agreement" class="hash-link" aria-label="SLA (Service Level Agreement)에 대한 직접 링크" title="SLA (Service Level Agreement)에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="현재-실적-vs-목표-2026년-2월-기준">현재 실적 vs 목표 (2026년 2월 기준)<a href="#현재-실적-vs-목표-2026년-2월-기준" class="hash-link" aria-label="현재 실적 vs 목표 (2026년 2월 기준)에 대한 직접 링크" title="현재 실적 vs 목표 (2026년 2월 기준)에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>지표</th><th>현재 실적</th><th>목표</th><th>갭</th></tr></thead><tbody><tr><td>월간 CS 문의량</td><td>196건/월 (일 평균 6.5건)</td><td>-</td><td>-</td></tr><tr><td>평균 첫 응답 시간</td><td><strong>17시간</strong></td><td>1시간 이내</td><td>-16시간 (개선 필요)</td></tr><tr><td>평균 해결 시간</td><td><strong>48시간</strong></td><td>24시간 이내</td><td>-24시간 (개선 필요)</td></tr><tr><td>봇 자동처리율</td><td><strong>59%</strong></td><td>70%</td><td>-11% (개선 중)</td></tr></tbody></table>
+<p><strong>주요 개선 과제:</strong></p>
+<ul>
+<li class="">첫 응답 17시간 → 1시간 목표: 채널톡 AI 봇 강화 + 응답 자동화 확대</li>
+<li class="">해결 48시간 → 24시간 목표: 셀릭 ERP 전환 안정화 + 패스트박스 프로세스 최적화</li>
+<li class="">봇 자동처리 59% → 70% 목표: 시나리오 플레이북 확대 + FAQ 자동 매칭 개선</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="기본-sla-정의">기본 SLA 정의<a href="#기본-sla-정의" class="hash-link" aria-label="기본 SLA 정의에 대한 직접 링크" title="기본 SLA 정의에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>고객 등급</th><th>첫 응답 시간</th><th>해결 시간</th><th>비고</th></tr></thead><tbody><tr><td><strong>VIP 고객</strong></td><td>30분 이내</td><td>12시간 이내</td><td>연 100만원 이상 구매, Top 5%</td></tr><tr><td><strong>일반 고객</strong></td><td>1시간 이내</td><td>24시간 이내</td><td>일반 구매 고객</td></tr><tr><td><strong>신규 고객</strong></td><td>1시간 이내</td><td>24시간 이내</td><td>첫 구매 또는 문의</td></tr><tr><td><strong>긴급 문의</strong></td><td>15분 이내</td><td>4시간 이내</td><td>결제 오류, 오배송, 불량품, 법적 언급</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sla-세부-기준">SLA 세부 기준<a href="#sla-세부-기준" class="hash-link" aria-label="SLA 세부 기준에 대한 직접 링크" title="SLA 세부 기준에 대한 직접 링크" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="첫-응답-시간-first-response-time">첫 응답 시간 (First Response Time)<a href="#첫-응답-시간-first-response-time" class="hash-link" aria-label="첫 응답 시간 (First Response Time)에 대한 직접 링크" title="첫 응답 시간 (First Response Time)에 대한 직접 링크" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>측정 시작</strong>: 고객이 문의를 접수한 시점 (채널톡/무신사/29CM/카카오톡)</li>
+<li class=""><strong>측정 종료</strong>: AI 에이전트 또는 이커머스 매니저가 첫 번째 메시지를 전송한 시점</li>
+<li class=""><strong>목표</strong>:
+<ul>
+<li class="">VIP: 30분 이내</li>
+<li class="">일반/신규: 1시간 이내</li>
+<li class="">긴급: 15분 이내</li>
+</ul>
+</li>
+</ul>
+<p><strong>참고</strong>: 영업시간 외(평일 18:00 이후, 주말/공휴일)는 SLA 카운트에서 제외됩니다. 단, 채널톡 AI 봇은 24/7 운영.</p>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="해결-시간-resolution-time">해결 시간 (Resolution Time)<a href="#해결-시간-resolution-time" class="hash-link" aria-label="해결 시간 (Resolution Time)에 대한 직접 링크" title="해결 시간 (Resolution Time)에 대한 직접 링크" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>측정 시작</strong>: 고객이 문의를 접수한 시점</li>
+<li class=""><strong>측정 종료</strong>: 문제가 완전히 해결되어 &quot;해결&quot; 상태로 전환된 시점</li>
+<li class=""><strong>목표</strong>:
+<ul>
+<li class="">VIP: 12시간 이내</li>
+<li class="">일반/신규: 24시간 이내</li>
+<li class="">긴급: 4시간 이내</li>
+</ul>
+</li>
+</ul>
+<p><strong>참고</strong>: 고객 응답 대기 시간, 패스트박스 물류 처리 시간은 SLA에서 제외됩니다.</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="긴급-문의-기준">긴급 문의 기준<a href="#긴급-문의-기준" class="hash-link" aria-label="긴급 문의 기준에 대한 직접 링크" title="긴급 문의 기준에 대한 직접 링크" translate="no">​</a></h3>
+<p>다음 문의는 <strong>자동으로 긴급 티켓</strong>으로 분류됩니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>상황</th><th>설명</th><th>첫 응답</th><th>해결 시간</th></tr></thead><tbody><tr><td><strong>결제 오류</strong></td><td>중복 결제, 결제 실패, 금액 오류</td><td>15분</td><td>4시간</td></tr><tr><td><strong>오배송 (셀릭 ERP 오류)</strong></td><td>셀릭 ERP 상품코드 매칭 오류로 잘못된 상품 발송</td><td>15분</td><td>4시간</td></tr><tr><td><strong>심각한 불량</strong></td><td>입고/착용 불가 수준의 제품 하자</td><td>15분</td><td>4시간</td></tr><tr><td><strong>법적 언급</strong></td><td>소비자원 신고, 법적 조치 언급</td><td>즉시</td><td>4시간</td></tr><tr><td><strong>악성 고객</strong></td><td>욕설, 협박, 과도한 요구</td><td>즉시</td><td>이커머스 매니저 직접 처리</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="자동-에스컬레이션-조건">자동 에스컬레이션 조건<a href="#자동-에스컬레이션-조건" class="hash-link" aria-label="자동 에스컬레이션 조건에 대한 직접 링크" title="자동 에스컬레이션 조건에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="sla-초과-시-자동-에스컬레이션">SLA 초과 시 자동 에스컬레이션<a href="#sla-초과-시-자동-에스컬레이션" class="hash-link" aria-label="SLA 초과 시 자동 에스컬레이션에 대한 직접 링크" title="SLA 초과 시 자동 에스컬레이션에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>경과 시간</th><th>조치</th><th>알림 채널</th></tr></thead><tbody><tr><td><strong>첫 응답 SLA 50% 초과</strong></td><td>이커머스 매니저에게 알림</td><td>Slack #2000archives-cs</td></tr><tr><td><strong>첫 응답 SLA 100% 초과</strong></td><td>이커머스 매니저 + 팀 전체 알림</td><td>Slack #2000archives-management</td></tr><tr><td><strong>해결 SLA 50% 초과</strong></td><td>이커머스 매니저에게 알림</td><td>Slack #2000archives-cs</td></tr><tr><td><strong>해결 SLA 100% 초과</strong></td><td>이커머스 매니저 → 대표 보고</td><td>Slack #2000archives-management</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="복잡도-기반-에스컬레이션-notion-sop-step-4">복잡도 기반 에스컬레이션 (Notion SOP Step 4)<a href="#복잡도-기반-에스컬레이션-notion-sop-step-4" class="hash-link" aria-label="복잡도 기반 에스컬레이션 (Notion SOP Step 4)에 대한 직접 링크" title="복잡도 기반 에스컬레이션 (Notion SOP Step 4)에 대한 직접 링크" translate="no">​</a></h3>
+<p>다음 경우 <strong>즉시 이커머스 매니저에게 에스컬레이션</strong>합니다.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>조건</th><th>에스컬레이션 대상</th><th>채널</th></tr></thead><tbody><tr><td>AI 신뢰도 &lt; 50%</td><td>이커머스 매니저</td><td>Slack #2000archives-management</td></tr><tr><td>법적 문제 언급</td><td>이커머스 매니저 → 대표</td><td>Slack #2000archives-management</td></tr><tr><td>10만원 이상 보상 요구</td><td>이커머스 매니저 승인 필요</td><td>Slack #2000archives-management</td></tr><tr><td>동일 고객 3회 이상 반복 문의</td><td>이커머스 매니저</td><td>Slack #2000archives-cs</td></tr><tr><td>악성 고객 (욕설, 협박)</td><td>즉시 이커머스 매니저</td><td>Slack #2000archives-management</td></tr><tr><td>셀릭 ERP 코드 오류 관련</td><td>이커머스 매니저 + 셀릭 담당</td><td>Slack #2000archives-management</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="미해결-티켓-알림-시스템">미해결 티켓 알림 시스템<a href="#미해결-티켓-알림-시스템" class="hash-link" aria-label="미해결 티켓 알림 시스템에 대한 직접 링크" title="미해결 티켓 알림 시스템에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="자동-알림-발송-시점">자동 알림 발송 시점<a href="#자동-알림-발송-시점" class="hash-link" aria-label="자동 알림 발송 시점에 대한 직접 링크" title="자동 알림 발송 시점에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>경과 시간</th><th>알림 대상</th><th>내용</th></tr></thead><tbody><tr><td><strong>4시간</strong></td><td>이커머스 매니저</td><td>&quot;티켓 #1234가 4시간째 미해결 상태입니다&quot;</td></tr><tr><td><strong>8시간</strong></td><td>이커머스 매니저 + 팀</td><td>&quot;티켓 #1234가 8시간째 미해결 상태입니다&quot;</td></tr><tr><td><strong>12시간</strong></td><td>이커머스 매니저 + 대표</td><td>&quot;티켓 #1234가 12시간째 미해결 상태입니다 (SLA 위험)&quot;</td></tr><tr><td><strong>24시간</strong></td><td>대표</td><td>&quot;티켓 #1234 SLA 초과 -- 긴급 대응 필요&quot;</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="알림-채널">알림 채널<a href="#알림-채널" class="hash-link" aria-label="알림 채널에 대한 직접 링크" title="알림 채널에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>채널</th><th>용도</th></tr></thead><tbody><tr><td><strong>Slack #2000archives-cs</strong></td><td>일상 CS 알림, SLA 경고, 일반 문의</td></tr><tr><td><strong>Slack #2000archives-management</strong></td><td>에스컬레이션, 악성 고객, 법적 이슈, ERP 오류 보고</td></tr><tr><td><strong>채널톡 내부 알림</strong></td><td>이커머스 매니저 개인 알림</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sla-성과-측정">SLA 성과 측정<a href="#sla-성과-측정" class="hash-link" aria-label="SLA 성과 측정에 대한 직접 링크" title="SLA 성과 측정에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="주요-지표-kpi">주요 지표 (KPI)<a href="#주요-지표-kpi" class="hash-link" aria-label="주요 지표 (KPI)에 대한 직접 링크" title="주요 지표 (KPI)에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>지표</th><th>목표</th><th>현재 (2026-02)</th><th>측정 방법</th></tr></thead><tbody><tr><td><strong>첫 응답 SLA 준수율</strong></td><td>95% 이상</td><td>측정 중 (17h 평균)</td><td>첫 응답 시간 내 응답한 티켓 비율</td></tr><tr><td><strong>해결 SLA 준수율</strong></td><td>90% 이상</td><td>측정 중 (48h 평균)</td><td>해결 시간 내 해결된 티켓 비율</td></tr><tr><td><strong>평균 첫 응답 시간</strong></td><td>1시간</td><td><strong>17시간</strong></td><td>전체 티켓의 평균 첫 응답 시간</td></tr><tr><td><strong>평균 해결 시간</strong></td><td>24시간</td><td><strong>48시간</strong></td><td>전체 티켓의 평균 해결 시간</td></tr><tr><td><strong>봇 자동처리율</strong></td><td>70%</td><td><strong>59%</strong></td><td>채널톡 AI 봇이 자동 처리한 비율</td></tr><tr><td><strong>월간 문의량</strong></td><td>-</td><td><strong>196건/월</strong></td><td>전체 채널 합산</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="성과-리포트">성과 리포트<a href="#성과-리포트" class="hash-link" aria-label="성과 리포트에 대한 직접 링크" title="성과 리포트에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>일일 리포트</strong>: 매일 오전 10시, Slack #2000archives-cs에 전날 SLA 준수  율 + 미해결 티켓 현황</li>
+<li class=""><strong>주간 리포트</strong>: 매주 월요일, 주간 평균 응답/해결 시간 + 봇 자동처리율</li>
+<li class=""><strong>월간 리포트</strong>: 매월 1일, 월간 트렌드 분석 + 개선 방안 제시</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2026년-2월-known-issues-영향">2026년 2월 Known Issues 영향<a href="#2026년-2월-known-issues-영향" class="hash-link" aria-label="2026년 2월 Known Issues 영향에 대한 직접 링크" title="2026년 2월 Known Issues 영향에 대한 직접 링크" translate="no">​</a></h2>
+<p>현재 SLA에 영향을 주는 알려진 이슈:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>이슈</th><th>SLA 영향</th><th>대응</th></tr></thead><tbody><tr><td>셀릭 ERP 상품코드 매칭 오류</td><td>출고 지연 → 해결 시간 증가</td><td>수동 크로스체크 + 5,000원 보상 쿠폰</td></tr><tr><td>패스트박스 연휴 물량 적체</td><td>배송 지연 → 해결 시간 증가</td><td>순차 출고 안내 + 5,000원 보상 쿠폰</td></tr><tr><td>SNYDER WIDE DENIM 키링 누락</td><td>추가 문의 발생 → 문의량 증가</td><td>키링 재발송 처리</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="티켓-우선순위-규칙">티켓 우선순위 규칙<a href="#티켓-우선순위-규칙" class="hash-link" aria-label="티켓 우선순위 규칙에 대한 직접 링크" title="티켓 우선순위 규칙에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="우선순위-자동-할당">우선순위 자동 할당<a href="#우선순위-자동-할당" class="hash-link" aria-label="우선순위 자동 할당에 대한 직접 링크" title="우선순위 자동 할당에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>우선순위</th><th>조건</th><th>처리 순서</th></tr></thead><tbody><tr><td><strong>긴급 (Urgent)</strong></td><td>법적 문제, 결제 오류, 오배송(ERP 오류), 심각한 불량</td><td>1순위 (즉시 처리)</td></tr><tr><td><strong>높음 (High)</strong></td><td>VIP 고객, SLA 50% 초과, 고액 주문 (30만원+)</td><td>2순위</td></tr><tr><td><strong>보통 (Normal)</strong></td><td>일반 고객, 표준 문의 (교환/반품/사이즈/배송)</td><td>3순위</td></tr><tr><td><strong>낮음 (Low)</strong></td><td>단순 문의, 사이즈 정보 요청, 소재 문의, 스타일링 상담</td><td>4순위</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="cs-운영-시스템">CS 운영 시스템<a href="#cs-운영-시스템" class="hash-link" aria-label="CS 운영 시스템에 대한 직접 링크" title="CS 운영 시스템에 대한 직접 링크" translate="no">​</a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>시스템</th><th>용도</th></tr></thead><tbody><tr><td><strong>채널톡 (Channel Talk)</strong></td><td>자사몰 CS 채팅, AI 봇 자동응답</td></tr><tr><td><strong>Cafe24 어드민</strong></td><td>자사몰 주문/교환/반품/환불 처리</td></tr><tr><td><strong>무신사 파트너센터</strong></td><td>무신사 주문/반품 처리</td></tr><tr><td><strong>29CM 판매자센터</strong></td><td>29CM 주문/반품 처리</td></tr><tr><td><strong>셀릭 (Sellick) ERP</strong></td><td>재고 관리, 출고 관리 (전환 중)</td></tr><tr><td><strong>패스트박스 (Fastbox) 3PL</strong></td><td>물류센터, 입고/출고/회수/검수</td></tr><tr><td><strong>카카오톡</strong></td><td>고객 CS 문의 (일부)</td></tr><tr><td><strong>KYNDOF IMS Master (Google Sheets)</strong></td><td>통합 재고 관리</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="관련-문서">관련 문서<a href="#관련-문서" class="hash-link" aria-label="관련 문서에 대한 직접 링크" title="관련 문서에 대한 직접 링크" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="/cs-playbook/10_process_and_policies/10_02_escalation_rules">에스컬레이션 규칙</a> - 에스컬레이션 정책</li>
+<li class=""><a class="" href="/cs-playbook/00_brand_principles/00_02_cs_philosophy_and_service_principles">CS 철학 &amp; 서비스 원칙</a> - CS 원칙</li>
+<li class=""><a class="" href="/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy">주문/결제 정책</a> - 주문/결제 정책</li>
+<li class=""><a class="" href="/cs-playbook/10_process_and_policies/10_04_shipping_and_preorder_policy">배송 &amp; 예약배송 정책</a> - 배송 정책</li>
+<li class=""><a class="" href="/cs-playbook/10_process_and_policies/10_05_exchange_return_refund_policy">교환/반품/환불 정책</a> - 교환/환불 정책</li>
+<li class=""><a class="" href="/cs-playbook/25_known_issues_current/25_02_shipping_and_warehouse_issues">배송 &amp; 물류 이슈</a> - 패스트박스 물류 이슈</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="문서 페이지"><a class="pagination-nav__link pagination-nav__link--prev" href="/cs-playbook/category/프로세스--정책"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">프로세스 &amp; 정책</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cs-playbook/10_process_and_policies/10_02_escalation_rules"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">에스컬레이션 규칙</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#티켓-라이프사이클" class="table-of-contents__link toc-highlight">티켓 라이프사이클</a><ul><li><a href="#notion-sop-proc-b-004-4-step-매핑" class="table-of-contents__link toc-highlight">Notion SOP PROC-B-004 4-Step 매핑</a></li><li><a href="#1-신규-new----sop-step-1" class="table-of-contents__link toc-highlight">1. 신규 (New) -- SOP Step 1</a></li><li><a href="#2-접수-assigned----sop-step-1-2" class="table-of-contents__link toc-highlight">2. 접수 (Assigned) -- SOP Step 1-2</a></li><li><a href="#3-처리중-in-progress----sop-step-2-3" class="table-of-contents__link toc-highlight">3. 처리중 (In Progress) -- SOP Step 2-3</a></li><li><a href="#4-해결-resolved----sop-step-3-완료" class="table-of-contents__link toc-highlight">4. 해결 (Resolved) -- SOP Step 3 완료</a></li><li><a href="#5-종료-closed" class="table-of-contents__link toc-highlight">5. 종료 (Closed)</a></li></ul></li><li><a href="#sla-service-level-agreement" class="table-of-contents__link toc-highlight">SLA (Service Level Agreement)</a><ul><li><a href="#현재-실적-vs-목표-2026년-2월-기준" class="table-of-contents__link toc-highlight">현재 실적 vs 목표 (2026년 2월 기준)</a></li><li><a href="#기본-sla-정의" class="table-of-contents__link toc-highlight">기본 SLA 정의</a></li><li><a href="#sla-세부-기준" class="table-of-contents__link toc-highlight">SLA 세부 기준</a></li><li><a href="#긴급-문의-기준" class="table-of-contents__link toc-highlight">긴급 문의 기준</a></li></ul></li><li><a href="#자동-에스컬레이션-조건" class="table-of-contents__link toc-highlight">자동 에스컬레이션 조건</a><ul><li><a href="#sla-초과-시-자동-에스컬레이션" class="table-of-contents__link toc-highlight">SLA 초과 시 자동 에스컬레이션</a></li><li><a href="#복잡도-기반-에스컬레이션-notion-sop-step-4" class="table-of-contents__link toc-highlight">복잡도 기반 에스컬레이션 (Notion SOP Step 4)</a></li></ul></li><li><a href="#미해결-티켓-알림-시스템" class="table-of-contents__link toc-highlight">미해결 티켓 알림 시스템</a><ul><li><a href="#자동-알림-발송-시점" class="table-of-contents__link toc-highlight">자동 알림 발송 시점</a></li><li><a href="#알림-채널" class="table-of-contents__link toc-highlight">알림 채널</a></li></ul></li><li><a href="#sla-성과-측정" class="table-of-contents__link toc-highlight">SLA 성과 측정</a><ul><li><a href="#주요-지표-kpi" class="table-of-contents__link toc-highlight">주요 지표 (KPI)</a></li><li><a href="#성과-리포트" class="table-of-contents__link toc-highlight">성과 리포트</a></li></ul></li><li><a href="#2026년-2월-known-issues-영향" class="table-of-contents__link toc-highlight">2026년 2월 Known Issues 영향</a></li><li><a href="#티켓-우선순위-규칙" class="table-of-contents__link toc-highlight">티켓 우선순위 규칙</a><ul><li><a href="#우선순위-자동-할당" class="table-of-contents__link toc-highlight">우선순위 자동 할당</a></li></ul></li><li><a href="#cs-운영-시스템" class="table-of-contents__link toc-highlight">CS 운영 시스템</a></li><li><a href="#관련-문서" class="table-of-contents__link toc-highlight">관련 문서</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 2000 Archives. Internal Use.</div></div></div></footer></div>
+</body>
+</html>

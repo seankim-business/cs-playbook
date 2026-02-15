@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ko" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-10_process_and_policies/10_03_order_and_payment_policy" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">주문 &amp; 결제 정책 | 2000 Archives CS Playbook</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy"><meta data-rh="true" property="og:locale" content="ko"><meta data-rh="true" name="docusaurus_locale" content="ko"><meta data-rh="true" name="docsearch:language" content="ko"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="주문 &amp; 결제 정책 | 2000 Archives CS Playbook"><meta data-rh="true" name="description" content="주문 프로세스"><meta data-rh="true" property="og:description" content="주문 프로세스"><link data-rh="true" rel="icon" href="/cs-playbook/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy" hreflang="ko"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"프로세스 & 정책","item":"https://seankim-business.github.io/cs-playbook/category/프로세스--정책"},{"@type":"ListItem","position":2,"name":"주문 & 결제 정책","item":"https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy"}]}</script><link rel="stylesheet" href="/cs-playbook/assets/css/styles.e62fb1de.css">
+<script src="/cs-playbook/assets/js/runtime~main.9b677fbc.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/main.9da9e854.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="본문으로 건너뛰기"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">본문으로 건너뛰기</a></div><nav aria-label="메인" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="사이드바 펼치거나 접기" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/cs-playbook/"><b class="navbar__title text--truncate">2000 Archives CS Playbook</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/cs-playbook/">Playbook</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="어두운 모드와 밝은 모드 전환하기 (현재 system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="맨 위로 스크롤하기" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="문서 사이드바" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/cs-playbook/"><span title="Home" class="linkLabel_WmDU">Home</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/브랜드-원칙"><span title="브랜드 원칙" class="categoryLinkLabel_W154">브랜드 원칙</span></a><button aria-label="사이드바 분류 &#x27;브랜드 원칙&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/cs-playbook/category/프로세스--정책"><span title="프로세스 &amp; 정책" class="categoryLinkLabel_W154">프로세스 &amp; 정책</span></a><button aria-label="사이드바 분류 &#x27;프로세스 &amp; 정책&#x27; 접기" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"><span title="티켓 라이프사이클 &amp; SLA" class="linkLabel_WmDU">티켓 라이프사이클 &amp; SLA</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_02_escalation_rules"><span title="에스컬레이션 규칙" class="linkLabel_WmDU">에스컬레이션 규칙</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/cs-playbook/10_process_and_policies/10_03_order_and_payment_policy"><span title="주문 &amp; 결제 정책" class="linkLabel_WmDU">주문 &amp; 결제 정책</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_04_shipping_and_preorder_policy"><span title="배송 &amp; 예약배송 정책" class="linkLabel_WmDU">배송 &amp; 예약배송 정책</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_05_exchange_return_refund_policy"><span title="교환/반품/환불 정책" class="linkLabel_WmDU">교환/반품/환불 정책</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/cs-playbook/10_process_and_policies/10_06_coupon_point_promo_policy"><span title="쿠폰/포인트/프로모션 정책" class="linkLabel_WmDU">쿠폰/포인트/프로모션 정책</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/시나리오-플레이북"><span title="시나리오 플레이북" class="categoryLinkLabel_W154">시나리오 플레이북</span></a><button aria-label="사이드바 분류 &#x27;시나리오 플레이북&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/known-issues"><span title="Known Issues" class="categoryLinkLabel_W154">Known Issues</span></a><button aria-label="사이드바 분류 &#x27;Known Issues&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/스타일링--업셀"><span title="스타일링 &amp; 업셀" class="categoryLinkLabel_W154">스타일링 &amp; 업셀</span></a><button aria-label="사이드바 분류 &#x27;스타일링 &amp; 업셀&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/상품-정보"><span title="상품 정보" class="categoryLinkLabel_W154">상품 정보</span></a><button aria-label="사이드바 분류 &#x27;상품 정보&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/소재--케어"><span title="소재 &amp; 케어" class="categoryLinkLabel_W154">소재 &amp; 케어</span></a><button aria-label="사이드바 분류 &#x27;소재 &amp; 케어&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/퍼블릭-콘텐츠-링크"><span title="퍼블릭 콘텐츠 링크" class="categoryLinkLabel_W154">퍼블릭 콘텐츠 링크</span></a><button aria-label="사이  드바 분류 &#x27;퍼블릭 콘텐츠 링크&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/채널-가이드"><span title="채널 가이드" class="categoryLinkLabel_W154">채널 가이드</span></a><button aria-label="사이드바 분류 &#x27;채널 가이드&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/도구--ai"><span title="도구 &amp; AI" class="categoryLinkLabel_W154">도구 &amp; AI</span></a><button aria-label="사이드바 분류 &#x27;도구 &amp; AI&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/cs-playbook/category/교육--qa"><span title="교육 &amp; QA" class="categoryLinkLabel_W154">교육 &amp; QA</span></a><button aria-label="사이드바 분류 &#x27;교육 &amp; QA&#x27; 펼치기" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="탐색 경로"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="홈" class="breadcrumbs__link" href="/cs-playbook/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/cs-playbook/category/프로세스--정책"><span>프로세스 &amp; 정책</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">주문 &amp; 결제 정책</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">이 페이지에서</button></div><div class="theme-doc-markdown markdown"><header><h1>주문 &amp; 결제 정책</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="주문-프로세스">주문 프로세스<a href="#주문-프로세스" class="hash-link" aria-label="주문 프로세스에 대한 직접 링크" title="주문 프로세스에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="일반-주문-흐름">일반 주문 흐름<a href="#일반-주문-흐름" class="hash-link" aria-label="일반 주문 흐름에 대한 직접 링크" title="일반 주문 흐름에 대한 직접 링크" translate="no">​</a></h3>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">1. 장바구니 담기</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">2. 주문서 작성 (배송지, 결제 정보)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">3. 결제</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">4. 주문 접수 (자동 확인 이메일 발송)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">5. 상품 준비</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">6. 배송 출발 (송장 번호 발송)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">   ↓</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">7. 배송 완료</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="주문-변경-정책">주문 변경 정책<a href="#주문-변경-정책" class="hash-link" aria-label="주문 변경 정책에 대한 직접 링크" title="주문 변경 정책에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="주문-변경취소-가능-기준">주문 변경/취소 가능 기준<a href="#주문-변경취소-가능-기준" class="hash-link" aria-label="주문 변경/취소 가능 기준에 대한 직접 링크" title="주문 변경/취소 가능 기준에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>주문 상태</th><th>변경 가능 항목</th><th>조치 방법</th></tr></thead><tbody><tr><td><strong>결 제 완료</strong></td><td>전체 취소, 배송지 변경, 상품 변경</td><td>고객센터 또는 마이페이지</td></tr><tr><td><strong>상품 준비 중</strong></td><td>배송지 변경, 부분 취소</td><td>고객센터 문의 (시간 제한 있음)</td></tr><tr><td><strong>배송 준비 중</strong></td><td>배송지 변경만 가능</td><td>즉시 고객센터 문의 (익일 발송 전까지)</td></tr><tr><td><strong>배송 중</strong></td><td>변경 불가</td><td>수령 후 교환/반품</td></tr><tr><td><strong>배송 완료</strong></td><td>변경 불가</td><td>교환/반품만 가능</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="주문-취소-규칙">주문 취소 규칙<a href="#주문-취소-규칙" class="hash-link" aria-label="주문 취소 규칙에 대한 직접 링크" title="주문 취소 규칙에 대한 직접 링크" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="전체-취소">전체 취소<a href="#전체-취소" class="hash-link" aria-label="전체 취소에 대한 직접 링크" title="전체 취소에 대한 직접 링크" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>가능 시점</strong>: 배송 출발 전까지</li>
+<li class=""><strong>처리 시간</strong>: 즉시 취소 (결제 승인 취소)</li>
+<li class=""><strong>환불 소요 기간</strong>: 결제 수단별 상이 (아래 표 참조)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="부분-취소">부분 취소<a href="#부분-취소" class="hash-link" aria-label="부분 취소에 대한 직접 링크" title="부분 취소에 대한 직접 링크" translate="no">​</a></h4>
+<ul>
+<li class=""><strong>가능 조건</strong>: 2개 이상 상품 주문 시, 일부만 취소 가능</li>
+<li class=""><strong>제약 사항</strong>:
+<ul>
+<li class="">묶음 배송 상품은 부분 취소 시 배송비 재계산</li>
+<li class="">쿠폰 적용 주문은 부분 취소 시 쿠폰 재계산 (할인 비율 조정)</li>
+</ul>
+</li>
+<li class=""><strong>예시</strong>:
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">주문 내역: A 상품 50,000원 + B 상품 30,000원 = 80,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">쿠폰: 10% 할인 (-8,000원) → 최종 72,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">부분 취소: B 상품 취소</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 할인 재계산: A 상품 50,000원 - 10% = 45,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 환불액: 72,000 - 45,000 = 27,000원</span><br></span></code></pre></div></div>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="배송지-변경">배송지 변경<a href="#배송지-변경" class="hash-link" aria-label="배송지 변경에 대한 직접 링크" title="배송지 변경에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>가능 시점</strong>: 배송 출발 전까지</li>
+<li class=""><strong>변경 방법</strong>:
+<ol>
+<li class="">마이페이지 &gt; 주문 내역 &gt; 배송지 변경 (자동 처리)</li>
+<li class="">고객센터 문의 (수동 처리)</li>
+</ol>
+</li>
+<li class=""><strong>주의 사항</strong>:
+<ul>
+<li class="">배송 출발 후에는 택배사 측에서 변경 불가</li>
+<li class="">긴급 변경 시 고객센터로 전화 문의 권장</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="결제-수단--환불-정책">결제 수단 &amp; 환불 정책<a href="#결제-수단--환불-정책" class="hash-link" aria-label="결제 수단 &amp; 환불 정책에 대한 직접 링크" title="결제 수단 &amp; 환불 정책에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="지원-결제-수단">지원 결제 수단<a href="#지원-결제-수단" class="hash-link" aria-label="지원 결제 수단에 대한 직접 링크" title="지원 결제 수단에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>결제 수단</th><th>지원 여부</th><th>비고</th></tr></thead><tbody><tr><td><strong>신용카드</strong></td><td>✅ 지원</td><td>국내 모든 카드사</td></tr><tr><td><strong>체크카드</strong></td><td>✅ 지원</td><td>국내 모든 카드사</td></tr><tr><td><strong>계좌이체</strong></td><td>✅ 지원</td><td>실시간 계좌이체</td></tr><tr><td><strong>무통장입금</strong></td><td>✅ 지원</td><td>입금 확인 후 배송</td></tr><tr><td><strong>네이버페이</strong></td><td>✅ 지원</td><td>포인트 사용 가능</td></tr><tr><td><strong>카카오페이</strong></td><td>✅ 지원</td><td>머니 사용 가능</td></tr><tr><td><strong>토스페이</strong></td><td>✅ 지원</td><td>-</td></tr><tr><td><strong>페이코</strong></td><td>⚠️ Phase 2</td><td>준비 중</td></tr><tr><td><strong>해외카드</strong></td><td>❌ 미지원</td><td>추후 지원 예정</td></tr></tbody></table>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="결제-수단별-환불-소요-기간">결제 수단별 환불 소요 기간<a href="#결제-수단별-환불-소요-기간" class="hash-link" aria-label="결제 수단별 환불 소요 기간에 대한 직접 링크" title="결제 수단별 환불 소요 기간에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>결제 수단</th><th>환불 방식</th><th>소요 기간</th><th>비고</th></tr></thead><tbody><tr><td><strong>신용카드</strong></td><td>결제 승인 취소</td><td>3-7영업일</td><td>카드사별 차이 있음</td></tr><tr><td><strong>체크카드</strong></td><td>결제 승인 취소</td><td>3-7영업일</td><td>카드사별 차이 있음</td></tr><tr><td><strong>계좌이체</strong></td><td>고객 계좌 입금</td><td>1-3영업일</td><td>계좌 정보 확인 필요</td></tr><tr><td><strong>무통장입금</strong></td><td>고객 계좌 입금</td><td>1-3영업일</td><td>입금자명 일치 확인</td></tr><tr><td><strong>네이버페이</strong></td><td>네이버페이 머니 환급</td><td>즉시-3영업일</td><td>네이버페이 정책 따름</td></tr><tr><td><strong>카카오페이</strong></td><td>카카오머니 환급</td><td>즉시-3영업일</td><td>카카오페이 정책 따름</td></tr></tbody></table>
+<p><strong>참고</strong>: 영업일 기준이며, 주말/공휴일 제외</p>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="환불-지연-시-대응">환불 지연 시 대응<a href="#환불-지연-시-대응" class="hash-link" aria-label="환불 지연 시 대응에 대한 직접 링크" title="환불 지연 시 대응에 대한 직접 링크" translate="no">​</a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>예상 소요 기간 초과 시</th><th>조치</th></tr></thead><tbody><tr><td><strong>카드 결제</strong>: 7일 초과</td><td>PG사(결제대행사)에 문의하여 처리 상태 확인</td></tr><tr><td><strong>계좌이체</strong>: 3일 초과</td><td>고객 계좌번호 재확인 후 재송금</td></tr><tr><td><strong>간편결제</strong>: 3일 초과</td><td>해당 결제사(네이버/카카오)에 문의</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="중복-결제--결제-오류-처리">중복 결제 &amp; 결제 오류 처리<a href="#중복-결제--결제-오류-처리" class="hash-link" aria-label="중복 결제 &amp; 결제 오류 처리에 대한 직접 링크" title="중복 결제 &amp; 결제 오류 처리에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="중복-결제">중복 결제<a href="#중복-결제" class="hash-link" aria-label="중복 결제에 대한 직접 링크" title="중복 결제에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>발생 원인</strong>: 네트워크 오류, 새로고침, 중복 클릭 등</li>
+<li class=""><strong>확인 방법</strong>: 주문 내역 2건 이상 생성 여부 확인</li>
+<li class=""><strong>처리 절차</strong>:
+<ol>
+<li class="">즉시 중복 주문 전체 취소 처리</li>
+<li class="">결제 승인 취소 (자동 환불)</li>
+<li class="">고객에게 취소 완료 안내 + 환불 예정일 안내</li>
+</ol>
+</li>
+</ul>
+<p><strong>고객 응대 예시</strong>:</p>
+<blockquote>
+<p>&quot;중복 결제가 확인되어 즉시 취소 처리했습니다. 결제 승인 취소가 완료되었으며, 카드사에 따라 3-7영업일 내 환불됩니다. 불편을 드려 죄송합니다.&quot;</p>
+</blockquote>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="결제-실패">결제 실패<a href="#결제-실패" class="hash-link" aria-label="결제 실패에 대한 직접 링크" title="결제 실패에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>발생 원인</strong>: 카드 한도 초과, 비밀번호 오류, 시스템 오류 등</li>
+<li class=""><strong>처리 절차</strong>:
+<ol>
+<li class="">고객에게 결제 실패 사유 안내</li>
+<li class="">재결제 안내 (다른 결제 수단 제안)</li>
+<li class="">시스템 오류 시 개발팀 즉시 에스컬레이션</li>
+</ol>
+</li>
+</ul>
+<p><strong>고객 응대 예시</strong>:</p>
+<blockquote>
+<p>&quot;결제 승인이 실패했습니다. 카드사에서 [사유: 한도 초과/비밀번호 오류 등]로 승인 거부되었습니다. 다른 결제 수단으로 재시도해  주시거나, 카드사에 문의하시면 도움을 받으실 수 있습니다.&quot;</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="부분-취소--환불-계산">부분 취소 &amp; 환불 계산<a href="#부분-취소--환불-계산" class="hash-link" aria-label="부분 취소 &amp; 환불 계산에 대한 직접 링크" title="부분 취소 &amp; 환불 계산에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="부분-취소-시-환불액-계산-예시">부분 취소 시 환불액 계산 예시<a href="#부분-취소-시-환불액-계산-예시" class="hash-link" aria-label="부분 취소 시 환불액 계산 예시에 대한 직접 링크" title="부분 취소 시 환불액 계산 예시에 대한 직접 링크" translate="no">​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="예시-1-단순-부분-취소-쿠폰-없음">예시 1: 단순 부분 취소 (쿠폰 없음)<a href="#예시-1-단순-부분-취소-쿠폰-없음" class="hash-link" aria-label="예시 1: 단순 부분 취소 (쿠폰 없음)에 대한 직접 링크" title="예시 1: 단순 부분 취소 (쿠폰 없음)에 대한 직접 링크" translate="no">​</a></h4>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">주문 내역:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- A 상품: 50,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- B 상품: 30,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- 배송비: 3,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">= 총 83,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">부분 취소: B 상품 (30,000원)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 환불액: 30,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 배송비: A 상품만 남았으므로 배송비 유지 (3,000원)</span><br></span></code></pre></div></div>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="예시-2-쿠폰-적용-주문-부분-취소">예시 2: 쿠폰 적용 주문 부분 취소<a href="#예시-2-쿠폰-적용-주문-부분-취소" class="hash-link" aria-label="예시 2: 쿠폰 적용 주문 부분 취소에 대한 직접 링크" title="예시 2: 쿠폰 적용 주문 부분 취소에 대한 직접 링크" translate="no">​</a></h4>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">주문 내역:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- A 상품: 50,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- B 상품: 30,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- 쿠폰 할인: -8,000원 (10% 할인)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">= 총 72,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">부분 취소: B 상품</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 쿠폰 재계산: 50,000원 × 10% = -5,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ A 상품 최종 금액: 45,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 환불액: 72,000 - 45,000 = 27,000원</span><br></span></code></pre></div></div>
+<hr>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="예시-3-무료배송-조건-미달-시">예시 3: 무료배송 조건 미달 시<a href="#예시-3-무료배송-조건-미달-시" class="hash-link" aria-label="예시 3: 무료배송 조건 미달 시에 대한 직접 링크" title="예시 3: 무료배송 조건 미달 시에 대한 직접 링크" translate="no">​</a></h4>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">주문 내역:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- A 상품: 40,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- B 상품: 20,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- 배송비: 무료 (5만원 이상 주문)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">= 총 60,000원</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">부분  취소: B 상품 (20,000원)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 남은 금액: 40,000원 (무료배송 조건 미달)</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 배송비 3,000원 추가 부과</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">→ 환불액: 20,000 - 3,000 = 17,000원</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="묶음-배송-정책">묶음 배송 정책<a href="#묶음-배송-정책" class="hash-link" aria-label="묶음 배송 정책에 대한 직접 링크" title="묶음 배송 정책에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="묶음-배송-조건">묶음 배송 조건<a href="#묶음-배송-조건" class="hash-link" aria-label="묶음 배송 조건에 대한 직접 링크" title="묶음 배송 조건에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>동일 날짜 주문</strong>: 같은 날 여러 건 주문 시 자동 묶음 배송</li>
+<li class=""><strong>예약배송 + 일반 배송</strong>: 묶음 불가 (별도 발송)</li>
+<li class=""><strong>재고 여부</strong>: 모든 상품 재고 있을 때만 묶음 가능</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="묶음-배송-시-배송비">묶음 배송 시 배송비<a href="#묶음-배송-시-배송비" class="hash-link" aria-label="묶음 배송 시 배송비에 대한 직접 링크" title="묶음 배송 시 배송비에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>5만원 이상</strong>: 무료 배송</li>
+<li class=""><strong>5만원 미만</strong>: 3,000원 (1회만 부과)</li>
+</ul>
+<p><strong>고객 응대 예시</strong>:</p>
+<blockquote>
+<p>&quot;오늘 주문하신 2건(A, B)은 자동으로 묶음 배송됩니다. 총 주문 금액이 6만원이므로 배송비는 무료입니 다.&quot;</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="무통장입금-정책">무통장입금 정책<a href="#무통장입금-정책" class="hash-link" aria-label="무통장입금 정책에 대한 직접 링크" title="무통장입금 정책에 대한 직접 링크" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="입금-기한">입금 기한<a href="#입금-기한" class="hash-link" aria-label="입금 기한에 대한 직접 링크" title="입금 기한에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>기본</strong>: 주문 후 2일 이내 (48시간)</li>
+<li class=""><strong>기한 초과 시</strong>: 자동 주문 취소</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="입금자명-불일치">입금자명 불일치<a href="#입금자명-불일치" class="hash-link" aria-label="입금자명 불일치에 대한 직접 링크" title="입금자명 불일치에 대한 직접 링크" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>원칙</strong>: 입금자명과 주문자명 일치 필요</li>
+<li class=""><strong>불일치 시</strong>:
+<ol>
+<li class="">고객에게 연락하여 입금 확인</li>
+<li class="">입금자명 확인 후 수동 주문 확인 처리</li>
+</ol>
+</li>
+</ul>
+<p><strong>고객 응대 예시</strong>:</p>
+<blockquote>
+<p>&quot;입금자명이 주문자명과 다릅니다. 입금하신 분의 성함을 알려주시면 확인 후 주문을 진행하겠습니다.&quot;</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="관련-문서">관련 문서<a href="#관련-문서" class="hash-link" aria-label="관련 문서에 대한 직접 링크" title="관련 문서에 대한 직접 링크" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>배송 &amp; 예약배송 정책</strong>: <code>10_04_shipping_and_preorder_policy.md</code></li>
+<li class=""><strong>교환/반품/환불 정책</strong>: <code>10_05_exchange_return_refund_policy.md</code></li>
+<li class=""><strong>쿠폰/포인트/프로모션 정책</strong>: <code>10_06_coupon_point_promo_policy.md</code></li>
+<li class=""><strong>에스컬레이션 규칙</strong>: <code>10_02_escalation_rules.md</code> (결제 오류 시)</li>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="문서 페이지"><a class="pagination-nav__link pagination-nav__link--prev" href="/cs-playbook/10_process_and_policies/10_02_escalation_rules"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">에스컬레이션 규칙</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/cs-playbook/10_process_and_policies/10_04_shipping_and_preorder_policy"><div class="pagination-nav__sublabel">다음</div><div class="pagination-nav__label">배송 &amp; 예약배송 정책</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#주문-프로세스" class="table-of-contents__link toc-highlight">주문 프로세스</a><ul><li><a href="#일반-주문-흐름" class="table-of-contents__link toc-highlight">일반 주문 흐름</a></li></ul></li><li><a href="#주문-변경-정책" class="table-of-contents__link toc-highlight">주문 변경 정책</a><ul><li><a href="#주문-변경취소-가능-기준" class="table-of-contents__link toc-highlight">주문 변경/취소 가능 기준</a></li><li><a href="#주문-취소-규칙" class="table-of-contents__link toc-highlight">주문 취소 규칙</a></li><li><a href="#배송지-변경" class="table-of-contents__link toc-highlight">배송지 변경</a></li></ul></li><li><a href="#결제-수단--환불-정책" class="table-of-contents__link toc-highlight">결제 수단 &amp; 환불 정책</a><ul><li><a href="#지원-결제-수단" class="table-of-contents__link toc-highlight">지원 결제 수단</a></li><li><a href="#결제-수단별-환불-소요-기간" class="table-of-contents__link toc-highlight">결제 수단별 환불 소요 기간</a></li><li><a href="#환불-지연-시-대응" class="table-of-contents__link toc-highlight">환불 지연 시 대응</a></li></ul></li><li><a href="#중복-결제--결제-오류-처리" class="table-of-contents__link toc-highlight">중복 결제 &amp; 결제 오류 처리</a><ul><li><a href="#중복-결제" class="table-of-contents__link toc-highlight">중복 결제</a></li><li><a href="#결제-실패" class="table-of-contents__link toc-highlight">결제 실패</a></li></ul></li><li><a href="#부분-취소--환불-계산" class="table-of-contents__link toc-highlight">부분 취소 &amp; 환불 계산</a><ul><li><a href="#부분-취소-시-환불액-계산-예시" class="table-of-contents__link toc-highlight">부분 취소 시 환불액 계산 예시</a></li></ul></li><li><a href="#묶음-배송-정책" class="table-of-contents__link toc-highlight">묶음 배송 정책</a><ul><li><a href="#묶음-배송-조건" class="table-of-contents__link toc-highlight">묶음 배송 조건</a></li><li><a href="#묶음-배송-시-배송비" class="table-of-contents__link toc-highlight">묶음 배송 시 배송비</a></li></ul></li><li><a href="#무통장입금-정책" class="table-of-contents__link toc-highlight">무통장입금 정책</a><ul><li><a href="#입금-기한" class="table-of-contents__link toc-highlight">입금 기한</a></li><li><a href="#입금자명-불일치" class="table-of-contents__link toc-highlight">입금자명 불일치</a></li></ul></li><li><a href="#관련-문서" class="table-of-contents__link toc-highlight">관련 문서</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 2000 Archives. Internal Use.</div></div></div></footer></div>
+</body>
+</html>
