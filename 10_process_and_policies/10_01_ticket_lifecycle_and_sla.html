@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">티켓 라이프사이클 &amp; SLA | 2000 Archives CS Playbook</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"><meta data-rh="true" property="og:locale" content="ko"><meta data-rh="true" name="docusaurus_locale" content="ko"><meta data-rh="true" name="docsearch:language" content="ko"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="티켓 라이프사이클 &amp; SLA | 2000 Archives CS Playbook"><meta data-rh="true" name="description" content="티켓 라이프사이클"><meta data-rh="true" property="og:description" content="티켓 라이프사이클"><link data-rh="true" rel="icon" href="/cs-playbook/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla" hreflang="ko"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"프로세스 & 정책","item":"https://seankim-business.github.io/cs-playbook/category/프로세스--정책"},{"@type":"ListItem","position":2,"name":"티켓 라이프사이클 & SLA","item":"https://seankim-business.github.io/cs-playbook/10_process_and_policies/10_01_ticket_lifecycle_and_sla"}]}</script><link rel="stylesheet" href="/cs-playbook/assets/css/styles.e62fb1de.css">
-<script src="/cs-playbook/assets/js/runtime~main.9b677fbc.js" defer="defer"></script>
-<script src="/cs-playbook/assets/js/main.9da9e854.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/runtime~main.1336c9ac.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/main.481183d7.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -45,7 +45,7 @@
 
 
 
-<table><thead><tr><th>SOP Step</th><th>티켓 단계</th><th>설명</th></tr></thead><tbody><tr><td>Step 1: 문의접수확인</td><td>신규 → 접수</td><td>채널톡/무신  사/29CM에서 문의 접수, 분류</td></tr><tr><td>Step 2: 분류/응대</td><td>처리중</td><td>유형별 분류, 1차 응대, 시스템 조회</td></tr><tr><td>Step 3: 교환/환불 처리</td><td>처리중 → 해결</td><td>Cafe24 어드민 + 패스트박스 3PL 처리</td></tr><tr><td>Step 4: 클레임 에스컬레이션</td><td>에스컬레이션</td><td>이커머스 매니저 → Slack #2000archives-management</td></tr></tbody></table>
+<table><thead><tr><th>SOP Step</th><th>티켓 단계</th><th>설명</th></tr></thead><tbody><tr><td>Step 1: 문의접수확인</td><td>신규 → 접수</td><td>채널톡/무신  사/29CM에서 문의 접수, 분류</td></tr><tr><td>Step 2: 분류/응대</td><td>처리중</td><td>유형별 분류, 1차 응대, 시스템 조회</td></tr><tr><td>Step 3: 교환/환불 처리</td><td>처리중 → 해결</td><td>Cafe24 어드민 + 패스트박스 3PL 처리</td></tr><tr><td>Step 4: 클레임 에스컬레이션</td><td>에스컬레이션</td><td>이커머스 매니저 → Slack #2000archives-general</td></tr></tbody></table>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-신규-new----sop-step-1">1. 신규 (New) -- SOP Step 1<a href="#1-신규-new----sop-step-1" class="hash-link" aria-label="1. 신규 (New) -- SOP Step 1에 대한 직접 링크" title="1. 신규 (New) -- SOP Step 1에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
 <li class=""><strong>정의</strong>: 고객이 문의를 접수한 직후의 상태</li>
@@ -55,7 +55,7 @@
 <ul>
 <li class="">채널톡 AI 자동 분류 (주문/배송/교환/반품/사이즈/소재/스타일링 등)</li>
 <li class="">주문번호 기반 Cafe24 어드민 자동 조회</li>
-<li class="">셀릭 ERP 상품코드 매칭 확인 (전환 중 오류 가능)</li>
+<li class="">셀릭(Sellick) ERP [미확인] 상품코드 매칭 확인 (전환 중 오류 가능)</li>
 </ul>
 </li>
 </ul>
@@ -69,7 +69,7 @@
 <li class="">티켓 내용 정확히 파악</li>
 <li class="">Cafe24 어드민 / 무신사 파트너센터 / 29CM 판매자센터에서 주문 이력 조회</li>
 <li class="">셀릭 ERP에서 재고/출고 상태 확인</li>
-<li class="">패스트박스 3PL 시스템에서 물류 상태 확인</li>
+<li class="">패스트박스(Fastbox) 3PL [미확인] 시스템에서 물류 상태 확인</li>
 <li class="">KYNDOF IMS Master (Google Sheets)에서 추가 정보 조회</li>
 <li class="">25_known_issues_current/ 에서 현재 알려진 이슈 매칭</li>
 </ul>
@@ -96,7 +96,7 @@
 <li class=""><strong>정의</strong>: 문제가 해결되어 고객에게 최종 답변을 전달한 상태</li>
 <li class=""><strong>조건</strong>:
 <ul>
-<li class="">고객 의 질문에 완전한 답변 제공</li>
+<li class="">고객의 질문에 완전한 답변 제공</li>
 <li class="">요청 사항 처리 완료 (환불, 교환, 재발송 등)</li>
 <li class="">Cafe24 어드민에서 처리 상태 갱신 완료</li>
 <li class="">패스트박스에서 출고/회수 처리 완료</li>
@@ -155,7 +155,7 @@
 
 
 
-<table><thead><tr><th>지표</th><th>현재 실적</th><th>목표</th><th>갭</th></tr></thead><tbody><tr><td>월간 CS 문의량</td><td>196건/월 (일 평균 6.5건)</td><td>-</td><td>-</td></tr><tr><td>평균 첫 응답 시간</td><td><strong>17시간</strong></td><td>1시간 이내</td><td>-16시간 (개선 필요)</td></tr><tr><td>평균 해결 시간</td><td><strong>48시간</strong></td><td>24시간 이내</td><td>-24시간 (개선 필요)</td></tr><tr><td>봇 자동처리율</td><td><strong>59%</strong></td><td>70%</td><td>-11% (개선 중)</td></tr></tbody></table>
+<table><thead><tr><th>지표</th><th>현재 실적 [미확인 - Slack 실데이터 대조 필요]</th><th>목표</th><th>갭</th></tr></thead><tbody><tr><td>월간 CS 문의량</td><td>196건/월 (일 평균 6.5건)</td><td>-</td><td>-</td></tr><tr><td>평균 첫 응답 시간</td><td><strong>17시간</strong></td><td>1시간 이내</td><td>-16시간 (개선 필요)</td></tr><tr><td>평균 해결 시간</td><td><strong>48시간</strong></td><td>24시간 이내</td><td>-24시간 (개선 필요)</td></tr><tr><td>봇 자동처리율</td><td><strong>59%</strong></td><td>70%</td><td>-11% (개선 중)</td></tr></tbody></table>
 <p><strong>주요 개선 과제:</strong></p>
 <ul>
 <li class="">첫 응답 17시간 → 1시간 목표: 채널톡 AI 봇 강화 + 응답 자동화 확대</li>
@@ -306,7 +306,7 @@
 
 
 
-<table><thead><tr><th>경과 시간</th><th>조치</th><th>알림 채널</th></tr></thead><tbody><tr><td><strong>첫 응답 SLA 50% 초과</strong></td><td>이커머스 매니저에게 알림</td><td>Slack #2000archives-cs</td></tr><tr><td><strong>첫 응답 SLA 100% 초과</strong></td><td>이커머스 매니저 + 팀 전체 알림</td><td>Slack #2000archives-management</td></tr><tr><td><strong>해결 SLA 50% 초과</strong></td><td>이커머스 매니저에게 알림</td><td>Slack #2000archives-cs</td></tr><tr><td><strong>해결 SLA 100% 초과</strong></td><td>이커머스 매니저 → 대표 보고</td><td>Slack #2000archives-management</td></tr></tbody></table>
+<table><thead><tr><th>경과 시간</th><th>조치</th><th>알림 채널</th></tr></thead><tbody><tr><td><strong>첫 응답 SLA 50% 초과</strong></td><td>이커머스 매니저에게 알림</td><td>Slack #2000archives-cs</td></tr><tr><td><strong>첫 응답 SLA 100% 초과</strong></td><td>이커머스 매니저 + 팀 전체 알림</td><td>Slack #2000archives-general</td></tr><tr><td><strong>해결 SLA 50% 초과</strong></td><td>이커머스 매니저에게 알림</td><td>Slack #2000archives-cs</td></tr><tr><td><strong>해결 SLA 100% 초과</strong></td><td>이커머스 매니저 → 대표 보고</td><td>Slack #2000archives-general</td></tr></tbody></table>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="복잡도-기반-에스컬레이션-notion-sop-step-4">복잡도 기반 에스컬레이션 (Notion SOP Step 4)<a href="#복잡도-기반-에스컬레이션-notion-sop-step-4" class="hash-link" aria-label="복잡도 기반 에스컬레이션 (Notion SOP Step 4)에 대한 직접 링크" title="복잡도 기반 에스컬레이션 (Notion SOP Step 4)에 대한 직접 링크" translate="no">​</a></h3>
 <p>다음 경우 <strong>즉시 이커머스 매니저에게 에스컬레이션</strong>합니다.</p>
@@ -350,7 +350,7 @@
 
 
 
-<table><thead><tr><th>조건</th><th>에스컬레이션 대상</th><th>채널</th></tr></thead><tbody><tr><td>AI 신뢰도 &lt; 50%</td><td>이커머스 매니저</td><td>Slack #2000archives-management</td></tr><tr><td>법적 문제 언급</td><td>이커머스 매니저 → 대표</td><td>Slack #2000archives-management</td></tr><tr><td>10만원 이상 보상 요구</td><td>이커머스 매니저 승인 필요</td><td>Slack #2000archives-management</td></tr><tr><td>동일 고객 3회 이상 반복 문의</td><td>이커머스 매니저</td><td>Slack #2000archives-cs</td></tr><tr><td>악성 고객 (욕설, 협박)</td><td>즉시 이커머스 매니저</td><td>Slack #2000archives-management</td></tr><tr><td>셀릭 ERP 코드 오류 관련</td><td>이커머스 매니저 + 셀릭 담당</td><td>Slack #2000archives-management</td></tr></tbody></table>
+<table><thead><tr><th>조건</th><th>에스컬레이션 대상</th><th>채널</th></tr></thead><tbody><tr><td>AI 신뢰도 &lt; 50%</td><td>이커머스 매니저</td><td>Slack #2000archives-general</td></tr><tr><td>법적 문제 언급</td><td>이커머스 매니저 → 대표</td><td>Slack #2000archives-general</td></tr><tr><td>10만원 이상 보상 요구</td><td>이커머스 매니저 승인 필요</td><td>Slack #2000archives-general</td></tr><tr><td>동일 고객 3회 이상 반복 문의</td><td>이커머스 매니저</td><td>Slack #2000archives-cs</td></tr><tr><td>악성 고객 (욕설, 협박)</td><td>즉시 이커머스 매니저</td><td>Slack #2000archives-general</td></tr><tr><td>셀릭(Sellick) ERP [미확인] 코드 오류 관련</td><td>이커머스 매니저 + 셀릭 담당</td><td>Slack #2000archives-general</td></tr></tbody></table>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="미해결-티켓-알림-시스템">미해결 티켓 알림 시스템<a href="#미해결-티켓-알림-시스템" class="hash-link" aria-label="미해결 티켓 알림 시스템에 대한 직접 링크" title="미해결 티켓 알림 시스템에 대한 직접 링크" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="자동-알림-발송-시점">자동 알림 발송 시점<a href="#자동-알림-발송-시점" class="hash-link" aria-label="자동 알림 발송 시점에 대한 직접 링크" title="자동 알림 발송 시점에 대한 직접 링크" translate="no">​</a></h3>
@@ -408,7 +408,7 @@
 
 
 
-<table><thead><tr><th>채널</th><th>용도</th></tr></thead><tbody><tr><td><strong>Slack #2000archives-cs</strong></td><td>일상 CS 알림, SLA 경고, 일반 문의</td></tr><tr><td><strong>Slack #2000archives-management</strong></td><td>에스컬레이션, 악성 고객, 법적 이슈, ERP 오류 보고</td></tr><tr><td><strong>채널톡 내부 알림</strong></td><td>이커머스 매니저 개인 알림</td></tr></tbody></table>
+<table><thead><tr><th>채널</th><th>용도</th></tr></thead><tbody><tr><td><strong>Slack #2000archives-cs</strong></td><td>일상 CS 알림, SLA 경고, 일반 문의</td></tr><tr><td><strong>Slack #2000archives-general</strong></td><td>에스컬레이션, 악성 고객, 법적 이슈, ERP 오류 보고</td></tr><tr><td><strong>채널톡 내부 알림</strong></td><td>이커머스 매니저 개인 알림</td></tr></tbody></table>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="sla-성과-측정">SLA 성과 측정<a href="#sla-성과-측정" class="hash-link" aria-label="SLA 성과 측정에 대한 직접 링크" title="SLA 성과 측정에 대한 직접 링크" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="주요-지표-kpi">주요 지표 (KPI)<a href="#주요-지표-kpi" class="hash-link" aria-label="주요 지표 (KPI)에 대한 직접 링크" title="주요 지표 (KPI)에 대한 직접 링크" translate="no">​</a></h3>
@@ -463,7 +463,7 @@
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="성과-리포트">성과 리포트<a href="#성과-리포트" class="hash-link" aria-label="성과 리포트에 대한 직접 링크" title="성과 리포트에 대한 직접 링크" translate="no">​</a></h3>
 <ul>
-<li class=""><strong>일일 리포트</strong>: 매일 오전 10시, Slack #2000archives-cs에 전날 SLA 준수  율 + 미해결 티켓 현황</li>
+<li class=""><strong>일일 리 포트</strong>: 매일 오전 10시, Slack #2000archives-cs에 전날 SLA 준수율 + 미해결 티켓 현황</li>
 <li class=""><strong>주간 리포트</strong>: 매주 월요일, 주간 평균 응답/해결 시간 + 봇 자동처리율</li>
 <li class=""><strong>월간 리포트</strong>: 매월 1일, 월간 트렌드 분석 + 개선 방안 제시</li>
 </ul>
@@ -573,7 +573,7 @@
 
 
 
-<table><thead><tr><th>시스템</th><th>용도</th></tr></thead><tbody><tr><td><strong>채널톡 (Channel Talk)</strong></td><td>자사몰 CS 채팅, AI 봇 자동응답</td></tr><tr><td><strong>Cafe24 어드민</strong></td><td>자사몰 주문/교환/반품/환불 처리</td></tr><tr><td><strong>무신사 파트너센터</strong></td><td>무신사 주문/반품 처리</td></tr><tr><td><strong>29CM 판매자센터</strong></td><td>29CM 주문/반품 처리</td></tr><tr><td><strong>셀릭 (Sellick) ERP</strong></td><td>재고 관리, 출고 관리 (전환 중)</td></tr><tr><td><strong>패스트박스 (Fastbox) 3PL</strong></td><td>물류센터, 입고/출고/회수/검수</td></tr><tr><td><strong>카카오톡</strong></td><td>고객 CS 문의 (일부)</td></tr><tr><td><strong>KYNDOF IMS Master (Google Sheets)</strong></td><td>통합 재고 관리</td></tr></tbody></table>
+<table><thead><tr><th>시스템</th><th>용도</th></tr></thead><tbody><tr><td><strong>채널톡 (Channel Talk)</strong></td><td>자사몰 CS 채팅, AI 봇 자동응답</td></tr><tr><td><strong>Cafe24 어드민</strong></td><td>자사몰 주문/교환/반품/환불 처리</td></tr><tr><td><strong>무신사 파트너센터</strong></td><td>무신사 주문/반품 처리</td></tr><tr><td><strong>29CM 판매자센터</strong></td><td>29CM 주문/반품 처리</td></tr><tr><td><strong>셀릭(Sellick) ERP</strong> [미확인]</td><td>재고 관리, 출고 관리 (전환 중)</td></tr><tr><td><strong>패스트박스(Fastbox) 3PL</strong> [미확인]</td><td>물류센터, 입고/출고/회수/검수</td></tr><tr><td><strong>카카오톡</strong></td><td>고객 CS 문의 (일부)</td></tr><tr><td><strong>KYNDOF IMS Master (Google Sheets)</strong></td><td>통합 재고 관리</td></tr></tbody></table>
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="관련-문서">관련 문서<a href="#관련-문서" class="hash-link" aria-label="관련 문서에 대한 직접 링크" title="관련 문서에 대한 직접 링크" translate="no">​</a></h2>
 <ul>
