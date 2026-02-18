@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">정기 QA 체크리스트 | 2000 Archives CS Playbook</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist"><meta data-rh="true" property="og:locale" content="ko"><meta data-rh="true" name="docusaurus_locale" content="ko"><meta data-rh="true" name="docsearch:language" content="ko"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="정기 QA 체크리스트 | 2000 Archives CS Playbook"><meta data-rh="true" name="description" content="목적"><meta data-rh="true" property="og:description" content="목적"><link data-rh="true" rel="icon" href="/cs-playbook/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist" hreflang="ko"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"교육 & QA","item":"https://seankim-business.github.io/cs-playbook/category/교육--qa"},{"@type":"ListItem","position":2,"name":"정기 QA 체크리스트","item":"https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist"}]}</script><link rel="stylesheet" href="/cs-playbook/assets/css/styles.e62fb1de.css">
-<script src="/cs-playbook/assets/js/runtime~main.8d59b90a.js" defer="defer"></script>
-<script src="/cs-playbook/assets/js/main.8a3b9d94.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/runtime~main.b783d8db.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/main.c66ac84d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -51,17 +51,19 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="평가-항목-100점-만점">평가 항목 (100점 만점)<a href="#평가-항목-100점-만점" class="hash-link" aria-label="평가 항목 (100점 만점)에 대한 직접 링크" title="평가 항목 (100점 만점)에 대한 직접 링크" translate="no">​</a></h3>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-톤앤매너-20점">1. 톤앤매너 (20점)<a href="#1-톤앤매너-20점" class="hash-link" aria-label="1. 톤앤매너 (20점)에 대한 직접 링크" title="1. 톤앤매너 (20점)에 대한 직접 링크" translate="no">​</a></h4>
 <ul class="contains-task-list containsTaskList_mC6p">
-<li class="task-list-item"><input type="checkbox" disabled=""> 친근한 존댓말 사용 (&quot;~해요&quot;, &quot;~드릴게요&quot;) (5점)</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 20대 여성 타겟 down-to-earth 톤 (5점)</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 채널별 톤 준수 (이메일/채널톡/인스타그램) (5점)</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 이모지 적절성 (감정 공감: 😢, 💕, ✨, 😊, 🙏) (5점)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 친근한 존댓말 사용 (&quot;~해요&quot;, &quot;~드릴게요&quot;) (4점)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 감정 고조 상황에서 공감 → 책임/의도 → 사과 → 정책 해결 → 후속 시점 순서 준수 (8점)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 채널별 톤 준수 (이메일/채널톡/인스타그램) (4점)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 문장 명확성 (기계적 매크로 느낌 없이 짧고 사람다운 문장) (2점)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 이모지 규칙 준수 (클레임 첫 응답 무이모지/최대 1개, 일반 문의 과다 사용 금지) (2점)</li>
 </ul>
 <p><strong>감점 사례</strong>:</p>
 <ul>
 <li class="">반말, 비속어 (-20점)</li>
-<li class="">형식적 딱딱한 톤 (&quot;~드리겠습니다&quot;) (-5점)</li>
-<li class="">이모지 과다 (4개 이상) 또는 부적절 (😂) (-3점)</li>
-<li class="">진짜 공감 부족 (&quot;죄송합니다&quot; → &quot;아 정말 죄송해요ㅠㅠ&quot;) (-5점)</li>
+<li class="">공감 없이 정책만 통보 (-8점)</li>
+<li class="">감정 대응 흐름 누락 (공감/사과/후속 시점 중 2개 이상 누락) (-5점)</li>
+<li class="">클레임 첫 응답에 이모지 2개 이상 또는 <code>ㅠㅠ</code> 반복 사용 (-5점)</li>
+<li class="">형식적 딱딱한 톤 (&quot;~드리겠습니다&quot; 반복) (-3점)</li>
 </ul>
 <hr>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-정확도-30점">2. 정확도 (30점)<a href="#2-정확도-30점" class="hash-link" aria-label="2. 정확도 (30점)에 대한 직접 링크" title="2. 정확도 (30점)에 대한 직접 링크" translate="no">​</a></h4>
@@ -79,7 +81,7 @@
 <li class="">오타 3개 이상 (-5점)</li>
 </ul>
 <hr>
-<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-셀럽-이름-누출-여부-20점--critical">3. 셀럽 이름 누출 여부 (20점 — CRITICAL)<a href="#3-셀럽-이 름-누출-여부-20점--critical" class="hash-link" aria-label="3. 셀럽 이름 누출 여부 (20점 — CRITICAL)에 대한 직접 링크" title="3. 셀럽 이름 누출 여부 (20점 — CRITICAL)에 대한 직접 링크" translate="no">​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-셀럽-이름-누출-여부-20점--critical">3. 셀럽 이름 누출 여부 (20점 — CRITICAL)<a href="#3-셀럽-이름-누출-여부-20점--critical" class="hash-link" aria-label="3. 셀럽 이름 누출 여부 (20점 — CRITICAL)에 대한 직접 링크" title="3. 셀럽 이름 누출 여부 (20점 — CRITICAL)에 대한 직접 링크" translate="no">​</a></h4>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> 셀럽 실명 절대 언급 안 함 (10점)</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> CELEB-xxx 코드명 언급 안 함 (5점)</li>
@@ -131,7 +133,7 @@
 <li class="">F (0-59): 불합격 (재교육)</li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="월간-qa-체크리스트">월간 QA 체크리스트<a href="#월간-qa-체크리스트" class="hash-link" aria-label="월간 QA 체크리스트에 대한 직접 링크" title="월간 QA 체크리스트에 대한 직접 링크" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="월간-qa-체크리스트">월간 QA 체크리스트<a href="#월간-qa-체크리스트" class="hash-link" aria-label="월간 QA 체크리스트에 대한 직접 링크" title="월간 QA 체크리스트에 대한 직접  링크" translate="no">​</a></h2>
 <p>주간 QA 항목 + 추가 항목:</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-전체-시나리오-커버리지-10점">6. 전체 시나리오 커버리지 (10점)<a href="#6-전체-시나리오-커버리지-10점" class="hash-link" aria-label="6. 전체 시나리오 커버리지 (10점)에 대한 직접 링크" title="6. 전체 시나리오 커버리지 (10점)에 대한 직접 링크" translate="no">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
@@ -227,7 +229,7 @@
 <p><strong>시점</strong>: 주간 QA 완료 후 2일 이내</p>
 <p><strong>형식</strong>:</p>
 <div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[주간 QA 피드백 — {{날짜}}]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">담당자: {{이름}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">총점: {{점수}}/100</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">등급: {{A/B/C/D/F}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">우수 사항:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- {{항목 1}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- {{항목 2}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">개선 필요 사항:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- {{항목 1}}: {{구체적 피드백}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- {{항목 2}}: {{구체적 피드백}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">다음 주 목표:</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- {{개선 목표 1}}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">- {{개선 목표 2}}</span><br></span></code></pre></div></div>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-재교육">3. 재교육<a href="#3-재교육" class="hash-link" aria-label="3. 재교육에 대 한 직접 링크" title="3. 재교육에 대한 직접 링크" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="3-재교육">3. 재교육<a href="#3-재교육" class="hash-link" aria-label="3. 재교육에 대한 직접 링크" title="3. 재교육에 대한 직접 링크" translate="no">​</a></h3>
 <p><strong>대상</strong>:</p>
 <ul>
 <li class="">주간 QA 70점 미만</li>
@@ -280,7 +282,7 @@
 <li class="">분기 평균 80점 미만: 개선 계획 수립</li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="자가-점검-self-qa">자가 점검 (Self QA)<a href="#자가-점검-self-qa" class="hash-link" aria-label="자가 점검 (Self QA)에   대한 직접 링크" title="자가 점검 (Self QA)에 대한 직접 링크" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="자가-점검-self-qa">자가 점검 (Self QA)<a href="#자가-점검-self-qa" class="hash-link" aria-label="자가 점검 (Self QA)에 대한 직접 링크" title="자가 점검 (Self QA)에 대한 직접 링크" translate="no">​</a></h2>
 <p>CS 담당자는 매일 본인의 응대 중 <strong>1건</strong>을 자가 점검합니다.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="자가-점검-체크리스트">자가 점검 체크리스트<a href="#자가-점검-체크리스트" class="hash-link" aria-label="자가 점검 체크리스트에 대한 직접 링크" title="자가 점검 체크리스트에 대한 직접 링크" translate="no">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
