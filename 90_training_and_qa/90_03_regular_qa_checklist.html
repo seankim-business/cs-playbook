@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.9.2">
 <title data-rh="true">정기 QA 체크리스트 | 2000 Archives CS Playbook</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist"><meta data-rh="true" property="og:locale" content="ko"><meta data-rh="true" name="docusaurus_locale" content="ko"><meta data-rh="true" name="docsearch:language" content="ko"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="정기 QA 체크리스트 | 2000 Archives CS Playbook"><meta data-rh="true" name="description" content="목적"><meta data-rh="true" property="og:description" content="목적"><link data-rh="true" rel="icon" href="/cs-playbook/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist" hreflang="ko"><link data-rh="true" rel="alternate" href="https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"교육 & QA","item":"https://seankim-business.github.io/cs-playbook/category/교육--qa"},{"@type":"ListItem","position":2,"name":"정기 QA 체크리스트","item":"https://seankim-business.github.io/cs-playbook/90_training_and_qa/90_03_regular_qa_checklist"}]}</script><link rel="stylesheet" href="/cs-playbook/assets/css/styles.e62fb1de.css">
-<script src="/cs-playbook/assets/js/runtime~main.b783d8db.js" defer="defer"></script>
-<script src="/cs-playbook/assets/js/main.c66ac84d.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/runtime~main.8d6c8fe7.js" defer="defer"></script>
+<script src="/cs-playbook/assets/js/main.af06dce9.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
 <svg style="display: none;"><defs>
@@ -56,13 +56,15 @@
 <li class="task-list-item"><input type="checkbox" disabled=""> 채널별 톤 준수 (이메일/채널톡/인스타그램) (4점)</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 문장 명확성 (기계적 매크로 느낌 없이 짧고 사람다운 문장) (2점)</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 이모지 규칙 준수 (클레임 첫 응답 무이모지/최대 1개, 일반 문의 과다 사용 금지) (2점)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 클레임/지연/불량/환불 응답에서 구매 이력 반영 (<code>{{최근_구매_이력}}</code>, <code>{{이전_불편_이력}}</code>) (가점 체크)</li>
 </ul>
 <p><strong>감점 사례</strong>:</p>
 <ul>
 <li class="">반말, 비속어 (-20점)</li>
 <li class="">공감 없이 정책만 통보 (-8점)</li>
 <li class="">감정 대응 흐름 누락 (공감/사과/후속 시점 중 2개 이상 누락) (-5점)</li>
-<li class="">클레임 첫 응답에 이모지 2개 이상 또는 <code>ㅠㅠ</code> 반복 사용 (-5점)</li>
+<li class="">클레임 첫 응답에 이모지 2개 이상 또는 <code>ㅠㅠ</code> 2회 이상 사용 (-5점)</li>
+<li class="">클레임/지연/불량/환불에서 주문 맥락(최근 구매·이전 불편) 미확인 (-3점)</li>
 <li class="">형식적 딱딱한 톤 (&quot;~드리겠습니다&quot; 반복) (-3점)</li>
 </ul>
 <hr>
@@ -72,6 +74,7 @@
 <li class="task-list-item"><input type="checkbox" disabled=""> 정책 정확 (교환/반품, 배송) (10점)</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 링크 유효성 (깨진 링크 없음) (5점)</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 오타/맞춤법 오류 없음 (5점)</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 환불/지연/불량 건에서 주문 상태 + 이력 동시 확인 (가점 체크)</li>
 </ul>
 <p><strong>감점 사례</strong>:</p>
 <ul>
@@ -133,7 +136,7 @@
 <li class="">F (0-59): 불합격 (재교육)</li>
 </ul>
 <hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="월간-qa-체크리스트">월간 QA 체크리스트<a href="#월간-qa-체크리스트" class="hash-link" aria-label="월간 QA 체크리스트에 대한 직접 링크" title="월간 QA 체크리스트에 대한 직접  링크" translate="no">​</a></h2>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="월간-qa-체크리스트">월간 QA 체크리스트<a href="#월간-qa-체크리스트" class="hash-link" aria-label="월간 QA 체크리스트에 대한 직접 링크" title="월간 QA 체크리스트에 대한 직접 링크" translate="no">​</a></h2>
 <p>주간 QA 항목 + 추가 항목:</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="6-전체-시나리오-커버리지-10점">6. 전체 시나리오 커버리지 (10점)<a href="#6-전체-시나리오-커버리지-10점" class="hash-link" aria-label="6. 전체 시나리오 커버리지 (10점)에 대한 직접 링크" title="6. 전체 시나리오 커버리지 (10점)에 대한 직접 링크" translate="no">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
@@ -179,6 +182,14 @@
 <ul>
 <li class="">CSAT 4.0 미만 (-10점)</li>
 </ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="참고-이력-기반-응대율-kpi">(참고) 이력 기반 응대율 KPI<a href="#참고-이력-기반-응대율-kpi" class="hash-link" aria-label="(참고) 이력 기반 응대율 KPI에 대한 직접 링크" title="(참고) 이력 기반 응대율 KPI에 대한 직접 링크" translate="no">​</a></h3>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> 클레임/지연/불량/환불 샘플의 80% 이상에서 <code>{{최근_구매_이력}}</code> 또는 <code>{{이전_불편_이력}}</code> 반영</li>
+</ul>
+<p><strong>감점 사례</strong>:</p>
+<ul>
+<li class="">반복 불만 고객인데 이전 이력 언급 없이 동일 스크립트만 반복 (-3점)</li>
+</ul>
 <hr>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="월간-qa-점수-계산">월간 QA 점수 계산<a href="#월간-qa-점수-계산" class="hash-link" aria-label="월간 QA 점수 계산에 대한 직접 링크" title="월간 QA 점수 계산에 대한 직접 링크" translate="no">​</a></h3>
 <p><strong>총점</strong>: 130점 (주간 100 + 시나리오 10 + Known Issues 10 + CSAT 10)</p>
@@ -192,7 +203,7 @@
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> 이메일: 서명 포함, 단락 구분</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 채널톡: 최대 3문장, 간결</li>
-<li class="task-list-item"><input type="checkbox" disabled=""> 인스타그램: 채널톡 유도, 공개성 주의</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 인스타그램: 채널톡 유도, 공  개성 주의</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 마켓플레이스: 자사몰 유도 금지</li>
 </ul>
 <p><strong>확인 방법</strong>:</p>
@@ -284,13 +295,14 @@
 <hr>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="자가-점검-self-qa">자가 점검 (Self QA)<a href="#자가-점검-self-qa" class="hash-link" aria-label="자가 점검 (Self QA)에 대한 직접 링크" title="자가 점검 (Self QA)에 대한 직접 링크" translate="no">​</a></h2>
 <p>CS 담당자는 매일 본인의 응대 중 <strong>1건</strong>을 자가 점검합니다.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="자가-점검-체크리스트">자가 점검 체크리스트<a href="#자가-점검-체크리스트" class="hash-link" aria-label="자가 점검 체크리스트에 대한 직접 링크" title="자가 점검 체크리스트에 대한 직접 링크" translate="no">​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="자가-점검-체크리스트">자가 점검 체크리스트<a href="#자가-점검-체크리스트" class="hash-link" aria-label="자 가 점검 체크리스트에 대한 직접 링크" title="자가 점검 체크리스트에 대한 직접 링크" translate="no">​</a></h3>
 <ul class="contains-task-list containsTaskList_mC6p">
 <li class="task-list-item"><input type="checkbox" disabled=""> 톤앤매너 적절했는가?</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 정보 정확했는가?</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 셀럽 이름 언급하지 않았는가?</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 응답 시간 준수했는가?</li>
 <li class="task-list-item"><input type="checkbox" disabled=""> 에스컬레이션이 필요했다면 실행했는가?</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> 클레임/지연/불량/환불 건에서 최근 주문/이전 불편 이력을 확인했는가?</li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="자가-점검-기록">자가 점검 기록<a href="#자가-점검-기록" class="hash-link" aria-label="자가 점검 기록에 대한 직접 링크" title="자가 점검 기록에 대한 직접 링크" translate="no">​</a></h3>
 <p><strong>형식</strong>:</p>
@@ -348,6 +360,6 @@
 <li class=""><code>90_training_and_qa/90_01_onboarding_material.md</code> — 온보딩 교육</li>
 <li class=""><code>60_tools_and_ai/60_01_crm_and_ticketing_usage.md</code> — 채널톡 사용법</li>
 <li class=""><code>50_channel_guides/</code> — 채널별 응대 가이드</li>
-</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="문서 페이지"><a class="pagination-nav__link pagination-nav__link--prev" href="/cs-playbook/90_training_and_qa/90_02_good_and_bad_examples"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">좋은 응답 / 나쁜 응답 예시</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#목적" class="table-of-contents__link toc-highlight">목적</a></li><li><a href="#qa-주기" class="table-of-contents__link toc-highlight">QA 주기</a></li><li><a href="#주간-qa-체크리스트" class="table-of-contents__link toc-highlight">주간 QA 체크리스트</a><ul><li><a href="#평가-항목-100점-만점" class="table-of-contents__link toc-highlight">평가 항목 (100점 만점)</a></li><li><a href="#주간-qa-점수-계산" class="table-of-contents__link toc-highlight">주간 QA 점수 계산</a></li></ul></li><li><a href="#월간-qa-체크리스트" class="table-of-contents__link toc-highlight">월간 QA 체크리스트</a><ul><li><a href="#6-전체-시나리오-커버리지-10점" class="table-of-contents__link toc-highlight">6. 전체 시나리오 커버리지 (10점)</a></li><li><a href="#7-known-issues-업데이트-여부-10점" class="table-of-contents__link toc-highlight">7. Known Issues 업데이트 여부 (10점)</a></li><li><a href="#8-고객-만족도-csat-10점" class="table-of-contents__link toc-highlight">8. 고객 만족도 (CSAT) (10점)</a></li><li><a href="#월간-qa-점수-계산" class="table-of-contents__link toc-highlight">월간 QA 점수 계산</a></li></ul></li><li><a href="#분기-qa-체크리스트" class="table-of-contents__link toc-highlight">분기 QA 체크리스트</a><ul><li><a href="#9-채널별-응대-규칙-준수-10점" class="table-of-contents__link toc-highlight">9. 채널별 응대 규칙 준수 (10점)</a></li><li><a href="#10-베스트워스트-케이스-분석-10점" class="table-of-contents__link toc-highlight">10. 베스트/워스트 케이스 분석 (10점)</a></li><li><a href="#분기-qa-점수-계산" class="table-of-contents__link toc-highlight">분기 QA 점수 계산</a></li></ul></li><li><a href="#qa-피드백-프로세스" class="table-of-contents__link toc-highlight">QA 피드백 프로세스</a><ul><li><a href="#1-qa-실시" class="table-of-contents__link toc-highlight">1. QA 실시</a></li><li><a href="#2-피드백-전달" class="table-of-contents__link toc-highlight">2. 피드백 전달</a></li><li><a href="#3-재교육" class="table-of-contents__link toc-highlight">3. 재교육</a></li></ul></li><li><a href="#qa-점수-활용" class="table-of-contents__link toc-highlight">QA 점수 활용</a><ul><li><a href="#인센티브-선택-사항" class="table-of-contents__link toc-highlight">인센티브 (선택 사항)</a></li><li><a href="#승진평가" class="table-of-contents__link toc-highlight">승진/평가</a></li></ul></li><li><a href="#자가-점검-self-qa" class="table-of-contents__link toc-highlight">자가 점검 (Self QA)</a><ul><li><a href="#자가-점검-체크리스트" class="table-of-contents__link toc-highlight">자가 점검 체크리스트</a></li><li><a href="#자가-점검-기록" class="table-of-contents__link toc-highlight">자가 점검 기록</a></li></ul></li><li><a href="#팀-전체-qa-지표" class="table-of-contents__link toc-highlight">팀 전체 QA 지표</a><ul><li><a href="#주간-팀-리포트" class="table-of-contents__link toc-highlight">주간 팀 리포트</a></li><li><a href="#개선-액션" class="table-of-contents__link toc-highlight">개선 액션</a></li></ul></li><li><a href="#관련-문서" class="table-of-contents__link toc-highlight">관련 문서</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 2000 Archives. Internal Use.</div></div></div></footer></div>
+</ul></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="문서 페이지"><a class="pagination-nav__link pagination-nav__link--prev" href="/cs-playbook/90_training_and_qa/90_02_good_and_bad_examples"><div class="pagination-nav__sublabel">이전</div><div class="pagination-nav__label">좋은 응답 / 나쁜 응답 예시</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#목적" class="table-of-contents__link toc-highlight">목적</a></li><li><a href="#qa-주기" class="table-of-contents__link toc-highlight">QA 주기</a></li><li><a href="#주간-qa-체크리스트" class="table-of-contents__link toc-highlight">주간 QA 체크리스트</a><ul><li><a href="#평가-항목-100점-만점" class="table-of-contents__link toc-highlight">평가 항목 (100점 만점)</a></li><li><a href="#주간-qa-점수-계산" class="table-of-contents__link toc-highlight">주간 QA 점수 계산</a></li></ul></li><li><a href="#월간-qa-체크리스트" class="table-of-contents__link toc-highlight">월간 QA 체크리스트</a><ul><li><a href="#6-전체-시나리오-커버리지-10점" class="table-of-contents__link toc-highlight">6. 전체 시나리오 커버리지 (10점)</a></li><li><a href="#7-known-issues-업데이트-여부-10점" class="table-of-contents__link toc-highlight">7. Known Issues 업데이트 여부 (10점)</a></li><li><a href="#8-고객-만족도-csat-10점" class="table-of-contents__link toc-highlight">8. 고객 만족도 (CSAT) (10점)</a></li><li><a href="#참고-이력-기반-응대율-kpi" class="table-of-contents__link toc-highlight">(참고) 이력 기반 응대율 KPI</a></li><li><a href="#월간-qa-점수-계산" class="table-of-contents__link toc-highlight">월간 QA 점수 계산</a></li></ul></li><li><a href="#분기-qa-체크리스트" class="table-of-contents__link toc-highlight">분기 QA 체크리스트</a><ul><li><a href="#9-채널별-응대-규칙-준수-10점" class="table-of-contents__link toc-highlight">9. 채널별 응대 규칙 준수 (10점)</a></li><li><a href="#10-베스트워스트-케이스-분석-10점" class="table-of-contents__link toc-highlight">10. 베스트/워스트 케이스 분석 (10점)</a></li><li><a href="#분기-qa-점수-계산" class="table-of-contents__link toc-highlight">분기 QA 점수 계산</a></li></ul></li><li><a href="#qa-피드백-프로세스" class="table-of-contents__link toc-highlight">QA 피드백 프로세스</a><ul><li><a href="#1-qa-실시" class="table-of-contents__link toc-highlight">1. QA 실시</a></li><li><a href="#2-피드백-전달" class="table-of-contents__link toc-highlight">2. 피드백 전달</a></li><li><a href="#3-재교육" class="table-of-contents__link toc-highlight">3. 재교육</a></li></ul></li><li><a href="#qa-점수-활용" class="table-of-contents__link toc-highlight">QA 점수 활용</a><ul><li><a href="#인센티브-선택-사항" class="table-of-contents__link toc-highlight">인센티브 (선택 사항)</a></li><li><a href="#승진평가" class="table-of-contents__link toc-highlight">승진/평가</a></li></ul></li><li><a href="#자가-점검-self-qa" class="table-of-contents__link toc-highlight">자가 점검 (Self QA)</a><ul><li><a href="#자가-점검-체크리스트" class="table-of-contents__link toc-highlight">자가 점검 체크리스트</a></li><li><a href="#자가-점검-기록" class="table-of-contents__link toc-highlight">자가 점검 기록</a></li></ul></li><li><a href="#팀-전체-qa-지표" class="table-of-contents__link toc-highlight">팀 전체 QA 지표</a><ul><li><a href="#주간-팀-리포트" class="table-of-contents__link toc-highlight">주간 팀 리포트</a></li><li><a href="#개선-액션" class="table-of-contents__link toc-highlight">개선 액션</a></li></ul></li><li><a href="#관련-문서" class="table-of-contents__link toc-highlight">관련 문서</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 2000 Archives. Internal Use.</div></div></div></footer></div>
 </body>
 </html>
